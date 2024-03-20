@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenu</class>
+ <widget class="QMainWindow" name="MainMenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>531</width>
+    <height>810</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>531</width>
+    <height>810</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>531</width>
+    <height>810</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainMenu</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>531</width>
+     <height>781</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>531</width>
+     <height>781</height>
+    </size>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>531</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>531</width>
+      <height>781</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>531</width>
+      <height>781</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="smartcalc" name="page">
+     <property name="minimumSize">
+      <size>
+       <width>531</width>
+       <height>781</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>531</width>
+       <height>781</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="finances" name="page_2">
+     <property name="minimumSize">
+      <size>
+       <width>531</width>
+       <height>781</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>531</width>
+       <height>781</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="Fin_Deposit" name="page_3"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>531</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuWidgets">
+    <property name="title">
+     <string>Widgets</string>
+    </property>
+    <addaction name="actionSmartCalc"/>
+    <addaction name="actionFinances"/>
+    <addaction name="actionFinances_Deposit"/>
+   </widget>
+   <addaction name="menuWidgets"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSmartCalc">
+   <property name="text">
+    <string>SmartCalc</string>
+   </property>
+  </action>
+  <action name="actionFinances">
+   <property name="text">
+    <string>Credit</string>
+   </property>
+  </action>
+  <action name="actionFinances_Deposit">
+   <property name="text">
+    <string>Deposit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>finances</class>
+   <extends>QWidget</extends>
+   <header>finances.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>smartcalc</class>
+   <extends>QWidget</extends>
+   <header>smartcalc.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Fin_Deposit</class>
+   <extends>QWidget</extends>
+   <header>fin_deposit.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
